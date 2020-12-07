@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/order.css">
+    <link rel="stylesheet" media="screen and (max-width: 1350px" href="/css/phone.css">
+    <title>Place Order</title>
+</head>
+<script>
+      function myFunction(){
+          alert("Your Booking has been successfully done!!");
+      }
+</script>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <!-- <img src="images/logo1.jpg" alt="MyOnlineMeal.com"> -->
+            <h1>MyYummyMeal</h1>
+        </div>
+
+        <ul>
+            <li class="item"><a href="/index.html#home">Home</a></li>
+            <li class="item"><a href="/index.html#menu-container">Menu</a></li>
+            <li class="item"><a href="/index.html#about">About</a></li>
+            <li class="item"><a href="/index.html#services-container">Services</a></li>
+            <li class="item"><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="container">
+        <div class="container-time">
+        <h2 class="heading">Time Open</h2>
+        <h3 class="heading-days">Monday-Friday</h3>
+        <p>11am - 1pm (breakfast)</p>
+        <p>1pm - 10pm (lunch/dinner)</p>
+        
+        <h3 class="heading-days">Saturday and sunday</h3>
+        <p>11am - 1pm (breakfast)</p>
+        <p>1pm - 12am (lunch/dinner)</p>
+        
+        <h4 class="heading-phone">Call Us: (123) 45-67-890</h4>
+        </div>
+        
+        <div class="container-form">
+        <form action="#">
+        <h2 class="heading heading-yellow">Reservation Online</h2>
+        
+        <div class="form-field">
+        <p>Your Name</p>
+        <input type="text" placeholder="Your Name">
+        </div>
+        <div class="form-field">
+        <p>Your email</p>
+        <input type="email" placeholder="Your email">
+        </div>
+        <div class="form-field">
+        <p>Date</p>
+        <input type="date">
+        </div>
+        <div class="form-field">
+        <p>Time</p>
+        <input type="time">
+        </div>
+        <div class="form-field">
+            <p>Type of Booking?</p>
+            <select name="select-type" id="#">
+                <option value="first">Family</option>
+                <option value="second">Friends</option>
+                <option value="third">Couple</option>
+                <option value="fourth">Grand Party</option>
+            </select>
+        </div>
+        <div class="form-field">
+        <p>How many people?</p>
+        <select name="select" id="#">
+        <option value="1">1 person</option>
+        <option value="2">2 persons</option>
+        <option value="3">3 persosn</option>
+        <option value="4">4 persons</option>
+        <option value="5">5 persons</option>
+        <option value="5+">5+ persons</option>
+        </select>
+        </div>
+        
+        <button class="btn" onclick="myFunction()">Submit</button>
+        </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div id="contact-us">
+            <div class="contact-box">
+                <h1>Address</h1>
+                <p>500 Sadar Bazaar</p>
+                <p>Delhi</p>
+            </div>
+            <div class="contact-box">
+                <h1>Opening Hours</h1>
+                <p>Mon - Fri: 11am - 10pm</p>
+                <p>Sat - Sun: 11am - 12am</p>
+            </div>
+            <div class="contact-box">
+                <h1>Contact Us</h1>
+                <p>myOnlineMeal.com</p>
+                <p>1234567890</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.myYummyMeal.com. All rights reserved!
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,397 @@
+/* css Reset  */
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    background-color: cornsilk
+  }
+  
+  /* Navigation Bar */
+  #navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+  }
+  
+  /* navigation bar: logo and image  */
+  #logo{
+    height: 56px;
+    margin: 10px 34px;
+    color: white;
+    padding-top: 25px;
+    font-family: cursive;
+  }
+  
+  
+  
+  #navbar ul{
+    display: flex;
+    font-family: monospace;
+  }
+  
+  #navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  
+  }
+  
+  #navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+  }
+  
+  #navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  #navbar ul li a:hover{
+    background-color: white;
+    color: black;
+  }
+  
+  /* home section   */
+  #home{
+     display: flex;
+     flex-direction: column;
+     padding: 3px 200px;
+     height: 578px;
+     justify-content: center;
+     align-items: center;
+  
+  }
+  
+  #home::before {
+    content:"";
+    position: absolute;
+    background: url(/images/bg2.jpg) no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+  
+  }
+  
+  #home h1{
+    color: white;
+    text-align: center;
+    font-family: cursive;
+  }
+  
+  #home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+  }
+  
+  .bg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  
+  /* Menu Section  */
+  
+   #menu-sec1{
+    margin: 64px;
+    display: flex;
+  }
+  
+   #menu-sec1::before{
+    content:"";
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+  } 
+  
+  #menu-sec1 .box{
+    padding: 34px;
+    margin: 3px 6px;
+  }
+  
+  #menu-sec1 .box::before{
+    content:"";
+   position: absolute;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   z-index: -1;
+  }
+  
+  #menu-sec1 .box img{
+    width: 600px;
+    height: 660px;
+    margin: auto;
+    display: block;
+  }
+  
+  #menu-sec1 .box p{
+    font-size: 1.8rem;
+    font-family: 'Cinzel', 'Satisfy';
+  }
+  
+  .menu-btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    margin-left: 165px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  
+   /* about section  */
+  
+   #about{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 660px;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  #about::before {
+   content:"";
+   position: absolute;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.89;
+  
+  }
+  
+  #about h1{
+   color: black;
+   font-size: 2.8rem;
+   text-align: center;
+   font-family: 'Cinzel', 'Satisfy';
+  }
+  
+  #about p{
+   color: black;
+   text-align: center;
+   font-size: 1.5rem;
+   font-family: 'Cinzel', 'Satisfy';
+  }
+  
+  #about .box{
+    background-color: cornsilk;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #about .box::before{
+    content:"";
+   position: absolute;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   z-index: -1;
+  }
+  
+  .about-btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin-left: 160px;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .about-btn a{
+    text-decoration: none; 
+    color: white;
+  }
+  
+  
+  /* Services Section */
+  
+  #services{
+    margin: 64px;
+    display: flex;
+  }
+  
+   #services::before{
+    content:"";
+    position: absolute;
+    background: url(/images/bg-1.jpg) no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+  } 
+  
+  #services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background: wheat;
+  }
+  
+  #services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+  }
+  
+  #services .box p{
+    font-family: 'Cinzel', 'Satisfy';
+  }
+  
+  .service-btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    margin-left: 110px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* COntact Section */
+  
+  #contact{
+    background: black;
+  }
+  
+  #contact-us{
+    margin: 84px;
+    display: flex;
+    
+  }
+  
+   #contact-us::before{
+    content:"";
+    position: absolute;
+    /* background: url(/images/bg-1.jpg) no-repeat center center/cover; */
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+  } 
+  
+  #contact-us .contact-box{
+    padding: 114px;
+    margin: 3px 6px;
+    color: white;
+  }
+  
+  #contact-us h1{
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+  }
+  
+  #contact-us p{
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+  }
+  
+  
+  #services .box p{
+    font-family: 'Cinzel', 'Satisfy';
+  }
+  
+  footer{
+    background: black;
+    color: white;   
+    padding: 10px 20px;
+  }
+  
+  
+  
+  
+  /* Utility Classes */
+  .h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Cinzel', 'Satisfy';
+  }
+  
+  .h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Cinzel', 'Satisfy';
+  }
+  
+  .btn{
+    padding: 6px 20px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .center{
+    text-align: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @-o-viewport{
+    zoom: 1.0;
+    width: fit-content;
+  }
